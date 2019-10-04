@@ -5,3 +5,4 @@ Days:
 
 1. 02-Oct-2019: variables, simple data types, and string interpolation
 2. 03-Oct-2019: arrays, dictionaries, sets, and enums
+3. 04-Oct-2019: operators and conditions
