@@ -1,0 +1,1 @@
+# Day 6: closures part one

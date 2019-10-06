@@ -7,3 +7,5 @@ Days:
 2. 03-Oct-2019: arrays, dictionaries, sets, and enums
 3. 04-Oct-2019: operators and conditions
 4. 05-Oct-2019: loops
+5. 05-Oct-2019: functions
+6. 06-Oct-2019: closures part one
