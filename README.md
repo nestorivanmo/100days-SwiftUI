@@ -9,3 +9,4 @@ Days:
 4. 05-Oct-2019: loops
 5. 05-Oct-2019: functions
 6. 06-Oct-2019: closures part one
+7. 07-Oct-2019: closures part two
