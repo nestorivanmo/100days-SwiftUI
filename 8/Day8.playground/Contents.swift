@@ -18,7 +18,7 @@ tennis.name = "Lawn tennis"
 
 //Computed properties
 /*
-    Property that runs code to figure out its value
+    Property that runs code to figure out its value. Computed Properties must always have a type and cannot be constants. 
  */
 struct Food {
     var name: String
@@ -37,7 +37,7 @@ print(frenchFries.healthStatus)
 //Property Observers
 
 /*
-    This observer lets you run code before or after any property changes.
+    This observer lets you run code before or after any property changes. Property observers should never be on constants.
 */
 
 struct Progress {
