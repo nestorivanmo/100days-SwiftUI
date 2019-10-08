@@ -10,3 +10,4 @@ Days:
 5. 05-Oct-2019: functions
 6. 06-Oct-2019: closures part one
 7. 07-Oct-2019: closures part two
+8. 08-Oct-2019: structs, properties and methods
