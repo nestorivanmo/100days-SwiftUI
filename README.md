@@ -13,3 +13,4 @@ Days:
 8. 08-Oct-2019: structs, properties and methods
 9. 09-Oct-2019: initializers, properties, access control, laziness
 10. 10-Oct-2019: classes and inheritance
+11. 11-Oct-2019: protocols and extensions
