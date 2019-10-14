@@ -16,3 +16,4 @@ Days:
 11. 11-Oct-2019: protocols and extensions
 12. 12-Oct-2019: optionals, unwrapping and typecasting
 13. 13-Oct-2019: Swift review, day one
+14. 14-Oct-2019: Swift, review day two
