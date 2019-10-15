@@ -17,3 +17,4 @@ Days:
 12. 12-Oct-2019: optionals, unwrapping and typecasting
 13. 13-Oct-2019: Swift review, day one
 14. 14-Oct-2019: Swift, review day two
+15. 15-Oct-2019: Swift, review day three
