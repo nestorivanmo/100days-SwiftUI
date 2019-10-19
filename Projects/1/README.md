@@ -1,4 +1,4 @@
-# Project One: Tip calculator
+# Project One: We Split
 
 ### Understanding the basic structure of a SwiftUI app
 
