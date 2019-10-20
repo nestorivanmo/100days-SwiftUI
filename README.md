@@ -44,3 +44,7 @@ Days:
 18. 18-Oct-2019: SwiftUI Project 1, part three
 
 19. 19-Oct-2019: First challenge
+
+
+
+20. 20-Oct-2019: SwiftUI Project 2, part one
