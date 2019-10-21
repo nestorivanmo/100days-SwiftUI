@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var countries = ["Estonia","France","Germany","Poland","Ireland","Italy","Nigeria","Poland","Russia","Spain","UK","US"].shuffled()
+    @State private var countries = ["Es","France","Germany","Poland","Ireland","Italy","Nigeria","Poland","Russia","Spain","UK","US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
     @State private var showingScore = false
@@ -27,6 +27,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .font(.largeTitle)
                         .fontWeight(.black)
+                        .lineLimit(nil)
                 }
                 ForEach(0..<3) { number in
                     Button(action:{
