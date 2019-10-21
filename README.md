@@ -48,3 +48,4 @@ Days:
 
 
 20. 20-Oct-2019: SwiftUI Project 2, part one
+21. 21-Oct-2019: SwiftUI Project 2, part two
