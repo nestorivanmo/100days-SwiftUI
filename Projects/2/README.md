@@ -1,5 +1,9 @@
 # Project Two: Guess the Flag
 
+![icon](images/guessF.png)
+
+---
+
 We need to get sure SwiftUI returns just one kind of view back. We cannot do the following: 
 
 ```swift

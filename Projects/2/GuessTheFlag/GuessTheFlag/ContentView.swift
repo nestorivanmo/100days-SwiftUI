@@ -9,11 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var countries = ["Es","France","Germany","Poland","Ireland","Italy","Nigeria","Poland","Russia","Spain","UK","US"].shuffled()
+    @State private var countries = ["Estonia","France","Germany","Poland","Ireland","Italy","Nigeria","Poland","Russia","Spain","UK","US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var userScore = 0
     
     var body: some View {
         ZStack {
@@ -33,6 +34,7 @@ struct ContentView: View {
                     Button(action:{
                         //Flag was tapped
                         self.flagTapped(number)
+                        self.askQuestion()
                     }) {
                         Image(self.countries[number])
                             .renderingMode(.original)
@@ -41,11 +43,14 @@ struct ContentView: View {
                             .shadow(color: .black, radius: 2)
                     }
                 }
+                Text("Score: \(userScore)")
+                    .foregroundColor(.white)
+                    .fontWeight(.black)
                 Spacer()
             }
         }
         .alert(isPresented: $showingScore, content: {
-            Alert(title: Text(scoreTitle), message: Text("Your score is ??"), dismissButton: .default(Text("Continue"), action: {
+            Alert(title: Text(scoreTitle), message: Text("Your score is \(userScore)"), dismissButton: .default(Text("Continue"), action: {
                 self.askQuestion()
             }))
         })
@@ -54,10 +59,19 @@ struct ContentView: View {
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            userScore += 10
+            showingScore = false
         } else {
-            scoreTitle = "False"
+            scoreTitle = "Wrong! That's the flag of \(countries[number])"
+            var score = userScore
+            score -= 10
+            if score < 0 {
+                userScore = 0
+            }else {
+                userScore -= 10
+            }
+            showingScore = true
         }
-        showingScore = true
     }
     
     func askQuestion() {
