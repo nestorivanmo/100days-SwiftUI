@@ -51,3 +51,4 @@ Days:
 21. 21-Oct-2019: SwiftUI Project 2, part two
 22. 22-Oct-2019: SwiftUI Project 2, part three
 23. 23-Oct-2019: SwiftUI Project 3, part one
+24. 24-Oct-2019: SwiftUI Project 3, part two 
