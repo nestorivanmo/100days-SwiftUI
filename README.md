@@ -52,3 +52,7 @@ Days:
 22. 22-Oct-2019: SwiftUI Project 2, part three
 23. 23-Oct-2019: SwiftUI Project 3, part one
 24. 24-Oct-2019: SwiftUI Project 3, part two 
+
+
+
+25. 25-Oct-2019: Mileston: Projects 1-3
