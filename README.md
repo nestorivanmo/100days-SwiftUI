@@ -56,3 +56,7 @@ Days:
 
 
 25. 25-Oct-2019: Mileston: Projects 1-3
+
+
+
+26. 28-Oct-2019: Project 4, part one
