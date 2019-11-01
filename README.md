@@ -61,3 +61,9 @@ Days:
 
 26. 28-Oct-2019: Project 4, part one
 27. 31-Oct-2019: Project 4, part two
+28. 31-Oct-2019: Project 4, part three
+
+
+
+29. 1-Nov-2019: Project 5, part one
+30. 1-Nov-2019: Project 5, part two
