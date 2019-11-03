@@ -18,6 +18,8 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var userScore = 0.0
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -30,8 +32,14 @@ struct ContentView: View {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
+                Text("Score: \(userScore, specifier: "%g")")
             }
             .navigationBarTitle(rootWord)
+            .navigationBarItems(leading:
+                Button("New word") {
+                    self.startGame()
+                }
+            )
             .onAppear(perform: self.startGame)
             .alert(isPresented: $showingError) {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
@@ -56,6 +64,20 @@ struct ContentView: View {
         guard isReal(word: answer) else {
             wordError(title: "Word not possible", message: "That isn't a real word.")
             return
+        }
+        guard notTheSame(word: answer) else {
+            wordError(title: "Word different", message: "Chose something else.")
+            return
+        }
+        guard shortLength(word: answer) else {
+            wordError(title: "Word too short", message: "Chose a word with more letters.")
+            return
+        }
+        
+        if answer.count > 5 {
+            userScore += 5
+        }else {
+            userScore += 3
         }
         
         usedWords.insert(answer, at: 0)
@@ -94,6 +116,20 @@ struct ContentView: View {
         let range = NSRange(location: 0, length: word.utf16.count)
         let mispelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
         return mispelledRange.location == NSNotFound
+    }
+    
+    func shortLength(word: String) -> Bool {
+        if word.count < 4 {
+            return false
+        }
+        return true
+    }
+    
+    func notTheSame(word: String) -> Bool {
+        if word == rootWord {
+            return false
+        }
+        return true
     }
     
     func wordError(title: String, message: String) {
