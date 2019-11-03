@@ -10,4 +10,6 @@
 
 5. [Word Scramble](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5)
 
-   
+6. [Animations](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/6)
+
+    
