@@ -121,3 +121,163 @@ struct ContentView: View {
 }
 ```
 
+---
+
+## Controlling the animation stack
+
+Animations animates all the modifiers that comes before up until the last animation. 
+
+```swift
+struct ContentView: View {
+    
+    @State private var enabled = false
+    
+    var body: some View {
+        Button("Tap me") {
+            self.enabled.toggle()
+        }
+        .frame(width: 200, height: 200)
+        .foregroundColor(.white)
+        .background(enabled ? Color.blue : Color.red)
+        .animation(.default)
+        .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
+        .animation(.interpolatingSpring(stiffness: 10, damping: 1))
+    }
+}
+```
+
+![icon](images/im40.png)
+
+---
+
+## Animating gestures
+
+```swift
+struct ContentView: View {
+    @State private var dragAmount = CGSize.zero
+    
+    var body: some View {
+        LinearGradient(gradient: Gradient(colors: [.yellow, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            .frame(width: 300, height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .offset(dragAmount)
+        .gesture(
+            DragGesture()
+                .onChanged {self.dragAmount = $0.translation }
+                .onEnded {_ in
+                    withAnimation(.spring()) {
+                        self.dragAmount = .zero
+                    }
+                }
+        )
+    }
+}
+```
+
+![icon](images/im41.png)
+
+```swift
+struct ContentView: View {
+    let letters = Array("Hello SwiftUI")
+    @State private var enabled = false
+    @State private var dragAmount = CGSize.zero
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            ForEach(0..<letters.count) { num in
+                Text(String(self.letters[num]))
+                    .padding(2)
+                    .font(.title)
+                    .background(self.enabled ? Color.blue : Color.red)
+                    .offset(self.dragAmount)
+                    .animation(Animation.default.delay(Double(num) / 20))
+            }
+        }
+        .gesture (
+            DragGesture()
+                .onChanged{ self.dragAmount = $0.translation }
+                .onEnded {_ in
+                    self.dragAmount = .zero
+                    self.enabled.toggle()
+                }
+        )
+    }
+}
+```
+
+![icon](images/im42.png)
+
+---
+
+## Showing and hiding animations with transitions
+
+```swift
+struct ContentView: View {
+    @State private var isShowingRed = false
+    
+    var body: some View {
+        VStack {
+            Button("Tap me") {
+                withAnimation {
+                    self.isShowingRed.toggle()
+                }
+            }
+            if isShowingRed {
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 200, height: 200)
+                    .transition(.asymmetric(insertion: .scale, removal: .opacity))
+            }
+        }
+    }
+}
+```
+
+![icon](images/im43.png)
+
+---
+
+## Building custom transitions using ViewModifier
+
+```swift
+struct CornerRotateModifier: ViewModifier {
+    let amount: Double
+    let anchor: UnitPoint
+    
+    func body(content: Content) -> some View {
+        content.rotationEffect(.degrees(amount), anchor: anchor)
+            .clipped()
+    }
+}
+
+extension AnyTransition {
+    static var pivot: AnyTransition {
+        .modifier (
+            active: CornerRotateModifier(amount: -90, anchor: .topLeading), identity: CornerRotateModifier(amount: 0, anchor: .topLeading)
+        )
+    }
+}
+
+struct ContentView: View {
+    @State private var isShowingRed = false
+    
+    var body: some View {
+        VStack {
+            Button("Tap me") {
+                withAnimation {
+                    self.isShowingRed.toggle()
+                }
+            }
+            if isShowingRed {
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 200, height: 200)
+                    .transition(.pivot)
+            }
+        }
+    }
+}
+```
+
+![icon](images/im44.png)
+

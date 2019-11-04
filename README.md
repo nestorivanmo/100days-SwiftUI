@@ -72,3 +72,4 @@ Days:
 
 
 32. 3-Nov-2019: Project 6, part one
+33. 4-Nov-2019: Project 6, part two
