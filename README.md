@@ -3,17 +3,17 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Days 1-12: IntroductionToSwift
 
-1. [02-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/1): variables, simple data types, and string interpolation
+1. [02-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Training/1): variables, simple data types, and string interpolation
 
-2. [03-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/2): arrays, dictionaries, sets, and enums
+2. [03-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Training/2): arrays, dictionaries, sets, and enums
 
-3. [04-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/3): operators and conditions
+3. [04-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Training/3): operators and conditions
 
-4. [05-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/4): loops
+4. [05-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Training/4): loops
 
-5. 05-Oct-2019: functions
+5. [05-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Training/5): functions
 
-6. 06-Oct-2019: closures part one
+6. [06-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Training/6): closures part one
 
 7. 07-Oct-2019: closures part two
 
