@@ -73,3 +73,11 @@ Days:
 
 32. 3-Nov-2019: Project 6, part one
 33. 4-Nov-2019: Project 6, part two
+
+## Projects
+
+Here is a list of all the projects being done in this tutorial: [Projects](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects)
+
+## Challenges
+
+Here is a list  of all the challenges being done in this tutorial: [Challenges](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges). In contrast with projects, the challenges are completely done by myself.
