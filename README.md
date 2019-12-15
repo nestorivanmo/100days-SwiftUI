@@ -3,13 +3,13 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Days 1-12: IntroductionToSwift
 
-1. 02-Oct-2019: variables, simple data types, and string interpolation
+1. [02-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/1): variables, simple data types, and string interpolation
 
-2. 03-Oct-2019: arrays, dictionaries, sets, and enums
+2. [03-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/2): arrays, dictionaries, sets, and enums
 
-3. 04-Oct-2019: operators and conditions
+3. [04-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/3): operators and conditions
 
-4. 05-Oct-2019: loops
+4. [05-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/4): loops
 
 5. 05-Oct-2019: functions
 
