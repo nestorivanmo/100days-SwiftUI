@@ -72,6 +72,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 ## Days 36-46: Scaling up to bigger apps
 
 36. [14-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/7-iExpense): Project 7, part one
+37. [15-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/7-iExpense): Project 7, part two
 
 ---
 
