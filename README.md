@@ -67,7 +67,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Day 35: Consolidation III
 
-35. **14-Dec-2019**: Milestone: Projets 4-6 && Third Challenge
+35. [14-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges/3-MultiplicationTablesGame): Milestone: Projets 4-6 && Third Challenge
 
 ---
 
