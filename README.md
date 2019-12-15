@@ -40,7 +40,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 16. [16-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/1-WeSplit): SwiftUI Project 1, part one
 17. [17-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/1-WeSplit): SwiftUI Project 1, part two
 18. [18-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/1-WeSplit): SwiftUI Project 1, part three
-19. 19-Oct-2019: First challenge
+19. [19-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges/1-UnitConversions): First challenge
 20. [20-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/2-GuessTheFlag): SwiftUI Project 2, part one
 21. [21-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/2-GuessTheFlag): SwiftUI Project 2, part two
 22. [22-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/2-GuessTheFlag): SwiftUI Project 2, part three
@@ -49,7 +49,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Day 25: Consolidation II
 
-25. 25-Oct-2019: Milestone: Projects 1-3 && Second Challenge
+25. [25-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges/2-RockPaperScissors): Milestone: Projects 1-3 && Second Challenge
 
 ## Days 26-34: Expanding your Skills
 
