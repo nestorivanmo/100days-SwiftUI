@@ -2,9 +2,7 @@
 
 Linus Torvalds once said: 
 
-```
-Nobody should start to undertake a large project. You start with a small trivial project, and you should never expect it to get large. If you do, you'll just overdesign and generally think it is more important that it likely is at that stage. Or worse, you might be scared away by the sheer size of the work you envision.
-```
+> Nobody should start to undertake a large project. You start with a small trivial project, and you should never expect it to get large. If you do, you'll just overdesign and generally think it is more important that it likely is at that stage. Or worse, you might be scared away by the sheer size of the work you envision.
 
 ## Why @State works only with structs
 
