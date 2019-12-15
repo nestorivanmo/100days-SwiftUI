@@ -49,7 +49,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Day 25: Consolidation II
 
-25. 25-Oct-2019: Milestone: Projects 1-3
+25. 25-Oct-2019: Milestone: Projects 1-3 && Second Challenge
 
 ## Days 26-34: Expanding your Skills
 
@@ -64,6 +64,12 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 32. 3-Nov-2019: Project 6, part one
 33. 4-Nov-2019: Project 6, part two
 34. 14-Dec-2019: Project 6: part three
+
+## Day 35: Consolidation III
+
+35. **14-Dec-2019**: Milestone: Projets 4-6 && Third Challenge
+
+---
 
 ## Projects
 
