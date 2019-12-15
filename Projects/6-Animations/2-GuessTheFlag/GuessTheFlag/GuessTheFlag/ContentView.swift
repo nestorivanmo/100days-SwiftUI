@@ -53,11 +53,6 @@ struct ContentView: View {
                         self.flagTapped(number)
                         self.askQuestion()
                     }) {
-//                        Image(self.countries[number])
-//                            .renderingMode(.original)
-//                            .clipShape(Capsule())
-//                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-//                            .shadow(color: .black, radius: 2)
                         FlagImage(self.countries[number])
                     }
                 }
