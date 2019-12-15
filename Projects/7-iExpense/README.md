@@ -66,5 +66,39 @@ UserDefaults is great for storing simple settings like Integers or Floats, but n
 
 ![icon](images/Codable.png)
 
+---
 
+## Building a list we can delete from
+
+We need to use a ForEach inside a List to get access to onDelete() modifier. 
+
+![icon](images/listDelete.png)
+
+
+
+## Working with Identifiable items in SwiftUI
+
+When we use List or ForEach to make dynamic views, SwiftUI needs to know how it can identify each item uniquely otherwise it's not able to compare view hierarchies to figure out what has changed. We need to add a UUID (universally unique identifier) to each instance of our struct. By using Identifiable as a protocol on our struct, we need to provide an ```id``` property. 
+
+![icon](images/structIdentifiable.png)
+
+And now, we can do the following with the ForEach loop:
+
+![icon](images/foreachIdentifiable.png)
+
+
+
+## Sharing an observed object with a new view
+
+Classes that conform to the ObservableObject protocol can be used in more than one SwiftUI view.
+
+![icon](images/sheetObservedObject.png)
+
+
+
+## Making changes permanent with UserDefaults
+
+![icon](images/didSetUserDefaults.png)
+
+![icon](images/iExpense.png)
 
