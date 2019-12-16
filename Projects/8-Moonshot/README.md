@@ -22,3 +22,20 @@ When we create an Image view in SwiftUI, it will automatically size itself accor
 
 ## How ScrollView lets us work with scrolling data
 
+ScrollView is useful when we want to scroll arbitrary data and it can scroll horizontally, vertically or in both directions. When we place views inside scroll views, they automatically figure out the size of that content so that users can scroll from one edge to the other. 
+
+![icon](images/ScrollView-basic.png)
+
+![icon](images/ScrollView-basic-simulator.png)
+
+When we add views to the ScrollView they get created immediately. If we use a custom view for creating a Text with:
+
+- ForEach: all the views will be created immediately.
+- List: the views will be created as needed, because a List works similar to a table view and only loads into memory the needed views. 
+
+![icon](images/CustomText.png)
+
+![icon](images/ScrollView-List.png)
+
+![icon](images/ScrollView-List-simulator.png)
+
