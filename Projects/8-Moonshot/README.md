@@ -39,3 +39,23 @@ When we add views to the ScrollView they get created immediately. If we use a cu
 
 ![icon](images/ScrollView-List-simulator.png)
 
+## Pushing new views onto the stack using NavigationLink
+
+SwiftUI's NavigationView also lets us push a view onto a view stack. Using a NavigationLink we can do that: give it a destination and something that can be tapped. We can use them with any kind of destination view. We can show extra views with either Sheet or NavigationLinks. However, we use NavigationLinks to show details of the current screen and Sheets when we want to present unrelated information. 
+
+![icon](images/NavigationLink.png)
+
+
+
+![Alt Text](images/NavigationLink-simulator.gif)
+
+
+
+Another example...
+
+![icon](images/NavigationLink-Rows.png)
+
+![Alt Text](images/NavigationLink-Rows-simulator.gif)
+
+
+
