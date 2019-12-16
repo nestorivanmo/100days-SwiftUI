@@ -59,3 +59,49 @@ Another example...
 
 
 
+## Working with hierarchical Codable data
+
+![icon](images/HierarchicalCodable.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
