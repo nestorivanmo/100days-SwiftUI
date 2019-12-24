@@ -75,7 +75,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 37. [15-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/7-iExpense): Project 7, part two
 38. [15-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/7-iExpense): Project 7, part three
 39. [15-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot): Project 8, part one
-40. <u>24-Dec-2019</u>: Project 8, part two
+40. [24-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot): Project 8, part two
 
 ---
 
