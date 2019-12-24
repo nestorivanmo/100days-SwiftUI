@@ -73,3 +73,18 @@ Another example...
 let astronauts = Bundle.main.decode("astronauts.json")
 ```
 
+## Using generics to load any kind of Codable data
+
+![icon](images/ExtensionBundleGenerics.png)
+
+The only difference is that we have to specify the type we are using...
+
+```swift
+let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+let missions: [Mission] = Bundle.main.decode("missions.json")
+```
+
+![icon](images/MissionStruct.png)
+
+## Formatting our mission view
+
