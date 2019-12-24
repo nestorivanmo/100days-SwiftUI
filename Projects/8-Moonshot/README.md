@@ -98,3 +98,15 @@ let missions: [Mission] = Bundle.main.decode("missions.json")
 
 ![Alt Text](images/Moonshot-simulator.gif)
 
+---
+
+## Showing mission details with ScrollView and GeometryReader
+
+![icon](images/MissionView.png)
+
+<img src="images/MissionViewPreview.png" alt="icon" style="zoom:50%;" />
+
+## Merging Codable structs using first(where:) 
+
+
+
