@@ -48,30 +48,33 @@ struct MissionView: View {
                     Text(self.mission.description)
                         .padding()
                     ForEach(self.astronauts, id: \.role) { crewMember in
-                        HStack {
-                            if crewMember.role == "Commander" {
-                                Image(crewMember.astronaut.id)
-                                    .resizable()
-                                    .frame(width: 100, height: 80)
-                                    .clipShape(Circle())
-                                    .overlay(Circle().stroke(Color.orange, lineWidth: 3))
-                            } else {
-                                Image(crewMember.astronaut.id)
-                                    .resizable()
-                                    .frame(width: 100, height: 80)
-                                    .clipShape(Circle())
-                                    .overlay(Circle().stroke(Color.secondary, lineWidth: 2))
+                        NavigationLink(destination: AstronautView(astronaut: crewMember.astronaut)) {
+                            HStack {
+                                if crewMember.role == "Commander" {
+                                    Image(crewMember.astronaut.id)
+                                        .resizable()
+                                        .frame(width: 100, height: 80)
+                                        .clipShape(Circle())
+                                        .overlay(Circle().stroke(Color.orange, lineWidth: 3))
+                                } else {
+                                    Image(crewMember.astronaut.id)
+                                        .resizable()
+                                        .frame(width: 100, height: 80)
+                                        .clipShape(Circle())
+                                        .overlay(Circle().stroke(Color.secondary, lineWidth: 2))
+                                }
+                                
+                                VStack(alignment: .leading) {
+                                    Text(crewMember.astronaut.name)
+                                        .font(.title)
+                                    Text(crewMember.role)
+                                        .foregroundColor(.secondary)
+                                }
+                                Spacer()
                             }
-                            
-                            VStack(alignment: .leading) {
-                                Text(crewMember.astronaut.name)
-                                    .font(.title)
-                                Text(crewMember.role)
-                                    .foregroundColor(.secondary)
-                            }
-                            Spacer()
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
+                        .buttonStyle(PlainButtonStyle())
                     }
                     Spacer(minLength: 25)
                 }
