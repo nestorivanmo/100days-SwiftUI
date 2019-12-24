@@ -4,6 +4,8 @@ Neil Armstrong once said:
 
 > Science is about what is; engineering is about what can be
 
+![Alt Text](images/MoonshotFinalSimulator.gif)
+
 #### Objectives:
 
 - GeometryReader
