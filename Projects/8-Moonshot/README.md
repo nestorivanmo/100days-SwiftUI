@@ -63,45 +63,13 @@ Another example...
 
 ![icon](images/HierarchicalCodable.png)
 
+---
 
+## Loading a specific kind of Codable data
 
+![icon](images/ExtensionBundle.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```swift
+let astronauts = Bundle.main.decode("astronauts.json")
+```
 
