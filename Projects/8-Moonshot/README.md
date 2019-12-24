@@ -108,5 +108,15 @@ let missions: [Mission] = Bundle.main.decode("missions.json")
 
 ## Merging Codable structs using first(where:) 
 
+![icon](images/MissionView-init.png)
+
+```swift
+NavigationLink(destination: MissionView(mission: mission, astronauts: self.astronauts))
+```
+
+![Alt Text](images/Moonshot-final.gif)
+
+
+
 
 
