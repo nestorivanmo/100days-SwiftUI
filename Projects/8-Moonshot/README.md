@@ -88,3 +88,11 @@ let missions: [Mission] = Bundle.main.decode("missions.json")
 
 ## Formatting our mission view
 
+![icon](images/FormattedView.png)
+
+![icon](images/DateFormatter.png)
+
+![icon](images/MissionStructFormatted.png)
+
+
+
