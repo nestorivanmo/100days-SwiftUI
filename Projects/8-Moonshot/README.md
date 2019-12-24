@@ -116,7 +116,15 @@ NavigationLink(destination: MissionView(mission: mission, astronauts: self.astro
 
 ![Alt Text](images/Moonshot-final.gif)
 
+## Fixing problems with buttonStyle() and layoutPriority()
 
+![icon](images/AstronautView.png)
 
+When we run this code, the images of the Astronauts will all be shown with a background color of blue. To fix this we need to change the button style (since we added a NavigationLink to the HStack of the astronauts) of the astronauts to a PlainButtonStyle. Also, we added a layoutPriority of 1 to the Text of the astronaut description to prevent the text from not rendering correctly. 
 
+![icon](images/ForEachMissionView.png)
+
+Final result...
+
+![Alt Text](images/MoonshotFinalSimulator.gif)
 
