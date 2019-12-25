@@ -51,6 +51,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B209126F23B3EA6800266780 /* Moonshot */ = {
+			isa = PBXGroup;
+			children = (
+				B2C01ED523A72E3C00BE0ED8 /* ContentView.swift */,
+			);
+			path = Moonshot;
+			sourceTree = "<group>";
+		};
+		B209127023B3EA8C00266780 /* MissionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B2E6677223B2B89600DC7647 /* MissionView.swift */,
+			);
+			path = MissionDetail;
+			sourceTree = "<group>";
+		};
+		B209127123B3EAA100266780 /* AstronautDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B2E6677423B2C50300DC7647 /* AstronautView.swift */,
+			);
+			path = AstronautDetail;
+			sourceTree = "<group>";
+		};
+		B209127223B3EABE00266780 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				B2E6676823B2AE7400DC7647 /* astronauts.json */,
+				B2E6676923B2AE7400DC7647 /* missions.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		B209127323B3EAE000266780 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2E6676C23B2AECC00DC7647 /* Astronaut.swift */,
+				B2E6677023B2B13000DC7647 /* Mission.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B2C01EC523A72E3C00BE0ED8 = {
 			isa = PBXGroup;
 			children = (
@@ -72,14 +114,12 @@
 			children = (
 				B2C01ED123A72E3C00BE0ED8 /* AppDelegate.swift */,
 				B2C01ED323A72E3C00BE0ED8 /* SceneDelegate.swift */,
-				B2C01ED523A72E3C00BE0ED8 /* ContentView.swift */,
-				B2E6677223B2B89600DC7647 /* MissionView.swift */,
-				B2E6677423B2C50300DC7647 /* AstronautView.swift */,
-				B2E6676C23B2AECC00DC7647 /* Astronaut.swift */,
-				B2E6677023B2B13000DC7647 /* Mission.swift */,
+				B209126F23B3EA6800266780 /* Moonshot */,
+				B209127023B3EA8C00266780 /* MissionDetail */,
+				B209127123B3EAA100266780 /* AstronautDetail */,
+				B209127323B3EAE000266780 /* Models */,
+				B209127223B3EABE00266780 /* JSONs */,
 				B2E6676E23B2AF0900DC7647 /* Bundle-Decodable.swift */,
-				B2E6676823B2AE7400DC7647 /* astronauts.json */,
-				B2E6676923B2AE7400DC7647 /* missions.json */,
 				B2C01ED723A72E4100BE0ED8 /* Assets.xcassets */,
 				B2C01EDC23A72E4100BE0ED8 /* LaunchScreen.storyboard */,
 				B2C01EDF23A72E4100BE0ED8 /* Info.plist */,
