@@ -79,11 +79,23 @@ Using the second parameter: sourceRect...
 
 ![icon](images/ImagePaint-Capsule-Simulator.png)
 
+## Enabling high-performance Metal rendering with drawingGroup()
 
+SwiftUI uses Core Animation for its rendering by default, which offers great performance out of the box. However, for complex rendering you might find your code starts to slow down - anything below 60 FPS is a problem, but really you ought to aim higher because many iOS devices now render at 120 FPS. 
 
+![icon](images/ColorCyclingCircle-smooth.png)
 
+![icon](images/ColorCyclingCircle-ContentView.png)
 
+![Alt Text](images/ColorCyclingCircle-smooth-Simulator.gif)
 
+However, if we do the following change, SwiftUI struggles to render 100 gradients as part of 100 separate views. 
 
+![icon](images/ColorCyclingCircle-tough.png)
 
+We can fix this by applying the **drawingGroup()** modifier which tells SwiftUI to render the contents of its view into an off-screen image before putting it back onto the screen as a signle rendered output, which is significantly faster. Behind the scenes, this is powerded by **Metal** which is Apple's framework for working directly with the GPU for extremely fast graphics. However, we should wait until we have a performance problem to use **drawingGroup()** since adding the off-screen render pass might slow down SwiftUI for simple drawing. 
+
+![icon](images/ColorCyclingCircle-drawingGroup.png)
+
+![Alt Text](images/ColorCyclingCircle-drawingGroup-Simulator.gif)
 
