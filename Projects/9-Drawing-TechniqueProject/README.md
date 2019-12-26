@@ -23,6 +23,16 @@ SwiftUI enables custom drawing with:
 - Path: series of drawing instructions all using absolute coordinates. 
 - Shape: has no idea of where it will be used or how big it will be used, but instead will be asked to draw itself inside a given rectangle therefore we don't need to use absoulte coordinates. *Shapes are built using Paths.*
 
+![icon](images/Shape-Basic.png)
+
+![icon](images/Shape-Basic-Simulator.png)
+
+Paths are designed to do one specific thing, whereas shapes have the flexibility of drawing space and can also accept parameters to let us customize them further. 
+
+![icon](images/Shape-Arc.png)
+
+![icon](images/Shape-Arc-Simulator.png)
+
 
 
 
