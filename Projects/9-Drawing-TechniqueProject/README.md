@@ -58,3 +58,32 @@ Now, using even-odd fills...
 ![icon](images/Ellipses-ContentView-EvenOddFills.png)
 
 ![Alt Text](images/Ellipses-EOFills-Simulator.gif)
+
+## Creative borders and fills using ImagePaint
+
+SwiftUI gives us a dedicated type that wraps images in a way that we have complete control over how they should be rendered, which in turn means we can use them for borders and fills without any problem. This type is called **ImagePaint**. 
+
+![icon](images/ImagePaint-scale.png)
+
+![icon](images/ImagePaint-scale-Simulator.png)
+
+Using the second parameter: sourceRect...
+
+![icon](images/ImagePaint-sourceRect-scale.png)
+
+![icon](images/ImagePaint-sourceRect-scale-Simulator.png)
+
+**ImagePaint** can also be used for view backgrounds and aslo shape strokes...
+
+![icon](images/ImagePaint-Capsule.png)
+
+![icon](images/ImagePaint-Capsule-Simulator.png)
+
+
+
+
+
+
+
+
+
