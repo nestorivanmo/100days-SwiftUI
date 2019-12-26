@@ -78,6 +78,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 40. [24-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot): Project 8, part two
 41. [24-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot): Project 8, part three
 42. [25-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot): Project 8, part four
+43. [25-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/9-Drawing-TechniqueProject): Project 9, part one
 
 ---
 
