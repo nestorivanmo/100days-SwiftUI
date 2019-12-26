@@ -59,20 +59,11 @@ struct Flower: Shape {
 }
 
 struct ContentView: View {
-    @State private var petalOffset = -20.0
-    @State private var petalWidth = 100.0
-    
     var body: some View {
-        VStack {
-            Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-//                .stroke(Color.red, lineWidth: 1)
-//                .fill(Color.red)
-                .fill(Color.red, style: FillStyle(eoFill: true))
-            Text("Offset")
-            Slider(value: $petalOffset, in: -40...40)
-            Text("Width")
-            Slider(value: $petalWidth, in: 0...100)
-        }
+        Text("Hello World")
+            .frame(width: 300, height: 300)
+//            .border(ImagePaint(image: Image("apollo10"), scale: 0.28), width: 30)
+            .border(ImagePaint(image: Image("apollo10"), sourceRect: CGRect(x: 0, y: 0.25, width: 1, height: 0.5), scale: 0.1), width: 30)
     }
 }
 
