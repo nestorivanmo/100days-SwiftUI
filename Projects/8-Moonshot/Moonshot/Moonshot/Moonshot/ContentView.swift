@@ -25,11 +25,6 @@ struct ContentView: View {
                         Text(mission.displayName)
                             .font(.headline)
                         Text(mission.formattedLaunchDate)
-                        Text("Members")
-                        ForEach(mission.crew, id: \.name) { member in
-                            Text("\(member.name)")
-                                .padding(.leading, 10)
-                        }
                     }
                     
                 }
