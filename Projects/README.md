@@ -7,4 +7,6 @@
 5. [Word Scramble](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble)
 6. [Animations](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/6-Animations)
 7. [iExpense](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/7-iExpense)
+8. [Moonshot](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot)
+9. [Drawing: Second technique project](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/9-Drawing-TechniqueProject)
 
