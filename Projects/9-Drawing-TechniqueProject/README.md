@@ -39,7 +39,22 @@ Paths are designed to do one specific thing, whereas shapes have the flexibility
 
 ![icon](images/Arc-InsettableShape-Simulator.png)
 
+---
 
+## Transforming shapes using CGAffineTransform and even-odd fills
 
+**CGAffineTransform**: how path or view should be rotated, scaled or sheared. 
 
+**Even-odd fills**: allows us to control how overlapping shapes should be rendered. 
 
+![icon](images/Flower-Struct.png)
+
+![icon](images/Ellipses-ContentView-Simple.png)
+
+![Alt Text](images/Ellipses-Simulator.gif)
+
+Now, using even-odd fills...
+
+![icon](images/Ellipses-ContentView-EvenOddFills.png)
+
+![Alt Text](images/Ellipses-EOFills-Simulator.gif)
