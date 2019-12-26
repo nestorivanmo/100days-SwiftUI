@@ -33,6 +33,12 @@ Paths are designed to do one specific thing, whereas shapes have the flexibility
 
 ![icon](images/Shape-Arc-Simulator.png)
 
+## Adding strokeBorder() support with InsettableShape
+
+![icon](images/Arc-InsettableShape.png)
+
+![icon](images/Arc-InsettableShape-Simulator.png)
+
 
 
 
