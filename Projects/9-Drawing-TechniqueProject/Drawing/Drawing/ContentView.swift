@@ -43,8 +43,8 @@ struct Arc: InsettableShape {
 
 struct ContentView: View {
     var body: some View {
-        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
-            .strokeBorder(Color.blue, lineWidth: 40)
+        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true, insetAmount: 100)
+            .strokeBorder(Color.blue, lineWidth: 10)
     }
 }
 
