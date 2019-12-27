@@ -99,3 +99,47 @@ We can fix this by applying the **drawingGroup()** modifier which tells SwiftUI 
 
 ![Alt Text](images/ColorCyclingCircle-drawingGroup-Simulator.gif)
 
+---
+
+## Special effects in SwiftUI: blurs, bending and more
+
+Blend modes allows us to control the way one view is rendered on top of another.
+
+![icon](images/BlendMode-multiply.png)
+
+<img src="images/BlendMode-multiply-preview.png" alt="icon" style="zoom:33%;" />
+
+![icon](images/3Circles.png)
+
+![Alt Text](images/3Circles-Simulator.gif)
+
+![icon](images/Blur-Saturation-Example.png)
+
+![Alt Text](images/Blur-Saturation-Example-Simulator.gif)
+
+## Animating simples shapes with animatableData
+
+SwiftUI examines the state of our view before the binding changes, and examines it again after the binding changes, then applying an animation to get from point A to point B. When we use **withAnimation()**, SwiftUI immediately changes our state property to its new value, but behind the scene's, it's also keeping track of the changing value over time as part of the animation. As the animation progresses, SwiftUI will set the **animatableData** property or our shape to the latest value. 
+
+![icon](images/TrapezoidStruct-Shape.png)
+
+![icon](images/TrapezoidAnimation-ContentView.png)
+
+![Alt Text](images/TrapezoidAnimation-ContentView-Simulator.gif)
+
+## Animating complex shapes with AnimatablePair
+
+SwiftUI uses **animatableData** property to let us animate changes to shapes, however, it only works with one property. If we were to work with more properties we need to use **AnimatablePair**. 
+
+**AnimatablePair** contains a pair of animatable values. 
+
+![icon](images/Checkerboard-AnimatablePair.png)
+
+![icon](images/Checkerboard-ContentView.png)
+
+![Alt Text](images/Checkerboard-AnimatablePair-Simulator.gif)
+
+## Creating a spirograph with SwiftUI
+
+![Alt Text](images/Spirograph-Simulator.gif)
+
