@@ -84,13 +84,19 @@ struct ColorCyclingCircle: View {
 }
 
 struct ContentView: View {
-    @State private var colorCycle = 0.0
+    
     var body: some View {
-        VStack {
-            ColorCyclingCircle(amount: self.colorCycle)
-                .frame(width: 300, height: 300)
-            Slider(value: $colorCycle)
+        ZStack {
+            Image("apollo10")
+            Rectangle()
+                .fill(Color.red)
+                //multiply: multiplies each source pixel color with
+                //the destination pixel color.
+                //therefore, blacks (value of 0 in rgb) stays black
+                .blendMode(.multiply)
         }
+        .frame(width: 400, height: 500)
+        .clipped()
     }
 }
 
