@@ -19,6 +19,18 @@ struct Triangle: Shape {
     }
 }
 
+struct Rectangle: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.minY))
+        return path
+    }
+}
+
 struct Arc: InsettableShape {
     var startAngle: Angle
     var endAngle: Angle
@@ -176,42 +188,34 @@ struct Spirograph: Shape {
     }
 }
 
-struct ContentView: View {
-    @State private var innerRadius = 125.0
-    @State private var outerRadius = 75.0
-    @State private var distance = 25.0
-    @State private var amount: CGFloat = 1.0
-    @State private var hue = 0.6
+struct Arrow: View {
+    var arrowThickness: CGFloat
+    var animatableData: CGFloat {
+        get { arrowThickness }
+        set { self.arrowThickness = newValue }
+    }
     
     var body: some View {
         VStack {
-            Spacer()
-            Spirograph(innerRadius: Int(innerRadius), outerRadius: Int(outerRadius), distance: Int(distance), amount: amount)
-                .stroke(Color(hue: hue, saturation: 1.0, brightness: 1.0), lineWidth: 1)
-                .frame(width: 300, height: 300)
-            Spacer()
-            
-            Group {
-                Text("Inner radius: \(Int(innerRadius))")
-                Slider(value: $innerRadius, in: 10...150, step: 1)
-                    .padding([.horizontal, .bottom])
-                
-                Text("Outer radius: \(Int(outerRadius))")
-                Slider(value: $outerRadius, in: 10...150, step: 1)
-                    .padding([.horizontal, .bottom])
-                
-                Text("Distance: \(Int(distance))")
-                Slider(value: $distance, in: 1...150, step: 1)
-                    .padding([.horizontal, .bottom])
-                
-                Text("Amount: \(amount, specifier: "%.2f")")
-                Slider(value: $amount)
-                    .padding([.horizontal, .bottom])
-                
-                Text("Color")
-                Slider(value: $hue)
-                    .padding(.horizontal)
-            }
+            Triangle()
+                .stroke(Color.red, style: StrokeStyle(lineWidth: arrowThickness, lineCap: .round, lineJoin: .round))
+                .frame(width: 200, height: 200)
+            Rectangle()
+                .stroke(Color.red, style: StrokeStyle(lineWidth: arrowThickness, lineCap: .round, lineJoin: .round))
+                .frame(width: 100, height: 300)
+        }
+    }
+}
+
+struct ContentView: View {
+    @State private var arrowThickness: CGFloat = 10
+    
+    var body: some View {
+        Arrow(arrowThickness: arrowThickness)
+            .onTapGesture {
+                withAnimation {
+                    self.arrowThickness = CGFloat.random(in: 1...20)
+                }
         }
     }
 }
