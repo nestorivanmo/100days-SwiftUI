@@ -188,22 +188,21 @@ struct Spirograph: Shape {
     }
 }
 
-struct Arrow: View {
-    var arrowThickness: CGFloat
-    var animatableData: CGFloat {
-        get { arrowThickness }
-        set { self.arrowThickness = newValue }
-    }
+struct Arrow: Shape {
     
-    var body: some View {
-        VStack {
-            Triangle()
-                .stroke(Color.red, style: StrokeStyle(lineWidth: arrowThickness, lineCap: .round, lineJoin: .round))
-                .frame(width: 200, height: 200)
-            Rectangle()
-                .stroke(Color.red, style: StrokeStyle(lineWidth: arrowThickness, lineCap: .round, lineJoin: .round))
-                .frame(width: 100, height: 300)
-        }
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.maxX / 4, y: rect.maxY))
+        
+        path.addLine(to: CGPoint(x: rect.maxX * 3 / 4, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX * 3 / 4, y: rect.maxY * 2 / 3))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY * 2 / 3))
+        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY * 2 / 3))
+        path.addLine(to: CGPoint(x: rect.maxX / 4, y: rect.maxY * 2 / 3))
+        path.addLine(to: CGPoint(x: rect.maxX / 4, y: rect.maxY))
+            
+        return path
     }
 }
 
@@ -211,7 +210,9 @@ struct ContentView: View {
     @State private var arrowThickness: CGFloat = 10
     
     var body: some View {
-        Arrow(arrowThickness: arrowThickness)
+        Arrow()
+            .stroke(Color.red, lineWidth: arrowThickness)
+            .frame(width: 200, height: 300)
             .onTapGesture {
                 withAnimation {
                     self.arrowThickness = CGFloat.random(in: 1...20)
