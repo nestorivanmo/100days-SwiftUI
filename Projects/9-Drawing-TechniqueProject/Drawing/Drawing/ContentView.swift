@@ -19,18 +19,6 @@ struct Triangle: Shape {
     }
 }
 
-struct Rectangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.minY))
-        return path
-    }
-}
-
 struct Arc: InsettableShape {
     var startAngle: Angle
     var endAngle: Angle
@@ -189,34 +177,65 @@ struct Spirograph: Shape {
 }
 
 struct Arrow: Shape {
+    var height: CGFloat = 1 / 8
+    var width: CGFloat = 1 / 4
     
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        path.move(to: CGPoint(x: rect.maxX / 4, y: rect.maxY))
-        
-        path.addLine(to: CGPoint(x: rect.maxX * 3 / 4, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.maxX * 3 / 4, y: rect.maxY * 2 / 3))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY * 2 / 3))
+        path.move(to: CGPoint(x: rect.maxX * width, y: rect.maxY))
+
+        path.addLine(to: CGPoint(x: rect.maxX * width * 3, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX * width * 3, y: rect.maxY * height * 5))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY * height * 5))
         path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY * 2 / 3))
-        path.addLine(to: CGPoint(x: rect.maxX / 4, y: rect.maxY * 2 / 3))
-        path.addLine(to: CGPoint(x: rect.maxX / 4, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY * height * 5))
+        path.addLine(to: CGPoint(x: rect.maxX * width, y: rect.maxY * height * 5))
+        path.addLine(to: CGPoint(x: rect.maxX * width, y: rect.maxY))
             
         return path
+    }
+}
+struct ColorCyclingRectangle: View {
+    var amount = 0.0
+    var steps = 100
+
+    var body: some View {
+        ZStack {
+            ForEach(0..<steps) { value in
+                Rectangle()
+                    .inset(by: CGFloat(value))
+                    .strokeBorder(LinearGradient(gradient: Gradient(colors: [self.color(for: value, brightness: 1), self.color(for: value, brightness: 0.5)]), startPoint: .top, endPoint: .bottom), lineWidth: 2)
+            }
+        }
+        .drawingGroup()
+    }
+
+    func color(for value: Int, brightness: Double) -> Color {
+        var targetHue = Double(value) / Double(self.steps) + self.amount
+        if targetHue > 1 {
+            targetHue -= 1
+        }
+        return Color(hue: targetHue, saturation: 1, brightness: brightness)
     }
 }
 
 struct ContentView: View {
     @State private var arrowThickness: CGFloat = 10
+    @State private var colorCycle = 0.0
     
     var body: some View {
-        Arrow()
-            .stroke(Color.red, lineWidth: arrowThickness)
-            .frame(width: 200, height: 300)
-            .onTapGesture {
-                withAnimation {
-                    self.arrowThickness = CGFloat.random(in: 1...20)
-                }
+        VStack(spacing: 40) {
+            Arrow()
+                .stroke(Color.green, lineWidth: arrowThickness)
+                .frame(width: 200, height: 400)
+                .onTapGesture {
+                    withAnimation {
+                        self.arrowThickness = CGFloat.random(in: 1...20)
+                    }
+            }
+            ColorCyclingRectangle(amount: self.colorCycle)
+                .frame(width: 300, height: 200)
+            Slider(value: $colorCycle)
         }
     }
 }
