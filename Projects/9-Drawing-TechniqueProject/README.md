@@ -143,3 +143,15 @@ SwiftUI uses **animatableData** property to let us animate changes to shapes, ho
 
 ![Alt Text](images/Spirograph-Simulator.gif)
 
+---
+
+## Wrapup: Arrow and ColorCyclingRectangle
+
+![icon](images/Arrow-Struct.png)
+
+![icon](images/ColorCyclingRectangle-Struct.png)
+
+![icon](images/Wrapup-ContentView.png)
+
+![Alt Text](images/Wrapup-Simulator.gif)
+
