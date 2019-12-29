@@ -56,11 +56,9 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 26. [28-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/4-BetterRest): Project 4, part one
 27. [31-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/4-BetterRest): Project 4, part two
 28. [31-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/4-BetterRest): Project 4, part three
-
-29. # [1-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part one
+29. [1-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part one
 30. [1-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part two
 31. [2-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part three
-
 32. [3-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/6-Animations): Project 6, part one
 33. [4-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/6-Animations): Project 6, part two
 34. [14-Dec-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/6-Animations): Project 6: part three
