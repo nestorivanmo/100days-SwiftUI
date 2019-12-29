@@ -57,7 +57,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 27. [31-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/4-BetterRest): Project 4, part two
 28. [31-Oct-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/4-BetterRest): Project 4, part three
 
-29. [1-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part one
+29. # [1-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part one
 30. [1-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part two
 31. [2-Nov-2019](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/5-WordScramble): Project 5, part three
 
@@ -85,7 +85,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Days 47-48: Consolidation IV
 
-47. 
+47. [Milestone: Projects 7-9 and 4th Project](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges/4-HabitTrackingApp)
 
 ---
 
