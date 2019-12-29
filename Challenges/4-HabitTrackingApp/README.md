@@ -2,6 +2,8 @@
 
 ## Leaned so far...
 
+[Project 7:](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/7-iExpense)
+
 - Why **@State** only works with structs
 - How to use **@ObservedObject** to work with classes
 - How **@Published** lets us announce property changes to any SwiftUI views that are watching
@@ -9,13 +11,20 @@
 - Using **onDelete(perform:)** to enable swipe to delete
 - Adding **EditButton** to navigation bar items, to let users edit list data more easily.
 - Reading and writing data with **UserDefaults**.
+
 - Archiving and unarchiving data with **Codable**, including working with data stored in hierarchy. 
 - Using the **Identifiable** protocol to make sure all items can be identified uniquely in our user interface. 
+
+[Project 8:](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/8-Moonshot)
+
 - How to use **GeometryReader** to make content fit the screen.
 - Using **ScrollView** to lay out custom views in a scrollable area. 
 - Pushing new views onto the navigation stack using **NavigationLink**.
 - Using Swift's **first(where:)** method to find the first element in an array that matches the predicate. 
 - Using **layoutPriority()** to adjust how much space is allocated to a view.
+
+[Project 9:](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/9-Drawing-TechniqueProject)
+
 - Creating custom paths and shapes.
 - Creating shapes that can be inset and have their border stroked, using **InsettableShape**.
 - Using **CGAffineTransform** to create rotations and translations.
