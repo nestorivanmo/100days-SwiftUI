@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25F874D23B9685F00D29104 /* HabitDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F874C23B9685F00D29104 /* HabitDetail.swift */; };
 		B2C9E6C123B928D2004A2D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9E6C023B928D2004A2D28 /* AppDelegate.swift */; };
 		B2C9E6C323B928D2004A2D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9E6C223B928D2004A2D28 /* SceneDelegate.swift */; };
 		B2C9E6C523B928D2004A2D28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9E6C423B928D2004A2D28 /* ContentView.swift */; };
 		B2C9E6C723B928D3004A2D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C9E6C623B928D3004A2D28 /* Assets.xcassets */; };
 		B2C9E6CA23B928D3004A2D28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C9E6C923B928D3004A2D28 /* Preview Assets.xcassets */; };
 		B2C9E6CD23B928D3004A2D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C9E6CB23B928D3004A2D28 /* LaunchScreen.storyboard */; };
+		B2CAEEF523B9643A00843860 /* AddHabitToTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAEEF423B9643A00843860 /* AddHabitToTrack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B25F874C23B9685F00D29104 /* HabitDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetail.swift; sourceTree = "<group>"; };
 		B2C9E6BD23B928D2004A2D28 /* Habit Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C9E6C023B928D2004A2D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C9E6C223B928D2004A2D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B2C9E6C923B928D3004A2D28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2C9E6CC23B928D3004A2D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2C9E6CE23B928D3004A2D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CAEEF423B9643A00843860 /* AddHabitToTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitToTrack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 		B2C9E6BF23B928D2004A2D28 /* Habit Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				B2CAEEF623B9644000843860 /* Views */,
 				B2C9E6C023B928D2004A2D28 /* AppDelegate.swift */,
 				B2C9E6C223B928D2004A2D28 /* SceneDelegate.swift */,
-				B2C9E6C423B928D2004A2D28 /* ContentView.swift */,
 				B2C9E6C623B928D3004A2D28 /* Assets.xcassets */,
 				B2C9E6CB23B928D3004A2D28 /* LaunchScreen.storyboard */,
 				B2C9E6CE23B928D3004A2D28 /* Info.plist */,
@@ -73,6 +77,16 @@
 				B2C9E6C923B928D3004A2D28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2CAEEF623B9644000843860 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2C9E6C423B928D2004A2D28 /* ContentView.swift */,
+				B25F874C23B9685F00D29104 /* HabitDetail.swift */,
+				B2CAEEF423B9643A00843860 /* AddHabitToTrack.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +162,9 @@
 			files = (
 				B2C9E6C123B928D2004A2D28 /* AppDelegate.swift in Sources */,
 				B2C9E6C323B928D2004A2D28 /* SceneDelegate.swift in Sources */,
+				B25F874D23B9685F00D29104 /* HabitDetail.swift in Sources */,
 				B2C9E6C523B928D2004A2D28 /* ContentView.swift in Sources */,
+				B2CAEEF523B9643A00843860 /* AddHabitToTrack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
