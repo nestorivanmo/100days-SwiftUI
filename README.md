@@ -84,7 +84,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 ## Days 47-48: Consolidation IV
 
 47. [Milestone: Projects 7-9 and 4th Project](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges/4-HabitTrackingApp)
-48. [Expanding your horizons](https://vimeo.com/295238750)
+48. [Expanding your horizons](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Conferences/ConsolidationIV-StarWarsAndSwift)
 
 ---
 
