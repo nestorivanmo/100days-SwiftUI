@@ -88,7 +88,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 
 ## Days 49-59: Focus on data
 
-49. [31-Dec-2019](https://github.com/nestorivano/100days-SwiftUI/tree/master/Projects/10-Cupcake)
+49. [31-Dec-2019](https://github.com/nestorivano/100days-SwiftUI/tree/master/Projects/10-Cupcake): Project 10, part one
 
 ---
 
