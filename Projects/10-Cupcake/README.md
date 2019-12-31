@@ -4,3 +4,45 @@ Zig Zaglar once said:
 
 > There are two sure ways to fail: think and never do, or do and never think. 
 
+## Adding Codable conformace for @Published properties
+
+If all the properties of a type conform to **Codable** then that type automatically conforms to **Codable**, however, that is not the case when we use the property wrapper **@Published**. This happens because *property wrapper* means that our property is wrapped inside another type that adds some additional functionality, in this case, a struct called **Published** which is a generic type, which means we cannot create an instance of **Published** all by itself, but rather make an instance of **Published<String>**. Therefore, we need to create the conformance to **Codable** ourselves by indicating which properties should be *encoded* and *decoded*. 
+
+![icon](images/UserClass.png)
+
+1. This initializer is handed an instance of **Decoder** which contains all our data but it's down to us to figure out how to read it. 
+2. Anyone who subclasses **User** must override this initializer with a custom implementation to make sure they add their own values. We mark this using the **required** keyword. An alternative would be to mark this class as **final** so that subclassing isn't allowed and drop the **required**. 
+3. Inside the method we ask our **Decoder** instance for a container matching all the coding keyrs we already set in our **CodingKey** struct. 
+4. Finally, we can read values directly from that container by referencing cases in our enum which provides really strong safety in two ways: 
+   1. We're making clear we expect to read strings, so if **name** changes to an integer, the code will stop compiling. 
+   2. We're using a case in our **CodingKeys** enum so there's no chance of typos. 
+
+## Sending and receiving Codable data with URLSession and SwiftUI
+
+Steps needed to complete a request: 
+
+1. Creating the URL we want to read from.
+2. Wrapping that in a **URLRequest** which allows us to configure how the URL should be accessed. 
+3. Create and start a networking task from that URL request. 
+4. Handle the result of that networking task. 
+
+**URLSession** is the iOS class responsible for managing network requests. 
+
+- **data**: whatever data was returned from the request.
+- **response**: description of the data which might include what type of data it is, howm uch was sent, whether there was a status code, etc.
+- **error**: error that ocurred.
+
+**URLSession** runs in the *background thread* which means the network request can be running, and even take a few seconds, without stopping our UI from being interactive. 
+
+![icon](images/URLSessionInsideContentView.png)
+
+![icon](images/URLSessionInsideContentView-Simulator.png)
+
+## Validating and disabling forms
+
+![icon](images/DisablingForm.png)
+
+![Alt Text](images/DF-Simulator.gif)
+
+
+
