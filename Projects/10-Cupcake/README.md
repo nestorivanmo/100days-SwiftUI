@@ -46,3 +46,37 @@ Steps needed to complete a request:
 
 
 
+---
+
+## Taking basic order details
+
+![icon](images/OrderClass.png)
+
+![icon](images/CC-ContentView-1.png)
+
+![icon](images/CC-ContentView-2.png)
+
+![Alt Text](images/CC-Simulator.gif)
+
+## Checking for a valid address
+
+One of the reasons we use a **class** for our data is the fact that whenever we change between different views, the data will not be erased. Whereas using a **struct** the data will be erased. 
+
+![icon](images/OrderClassForAddressView.png)
+
+![icon](images/AddressView.png)
+
+![Alt Text](images/AddressView-Simulator.gif)
+
+## Preparing for checkout 
+
+![icon](images/CheckoutView.png)
+
+![icon](images/OrderClassForCheckoutView.png)
+
+![Alt Text](images/CheckoutView-Simulator.gif)
+
+---
+
+
+
