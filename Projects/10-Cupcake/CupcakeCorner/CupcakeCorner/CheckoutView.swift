@@ -12,6 +12,8 @@ struct CheckoutView: View {
     @ObservedObject var order: Order
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+    @State private var showingNoInternetAlert = false
+    @State private var noInternetMessage = ""
     
     var body: some View {
         GeometryReader { geo in
@@ -34,6 +36,9 @@ struct CheckoutView: View {
         .alert(isPresented: $showingConfirmation) {
             Alert(title: Text("Thank you!"), message: Text(confirmationMessage), dismissButton: .default(Text("OK")))
         }
+        .alert(isPresented: $showingNoInternetAlert) {
+            Alert(title: Text("Oops!"), message: Text(noInternetMessage), dismissButton: .default(Text("OK")))
+        }
     }
     
     func placeOrder() {
@@ -50,6 +55,8 @@ struct CheckoutView: View {
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else {
                 print("No data in response: \(error?.localizedDescription ?? "Unknown error").")
+                self.showingNoInternetAlert = true
+                self.noInternetMessage = "\(error?.localizedDescription ?? "Unknown error")."
                 return
             }
             if let decodedOrder = try? JSONDecoder().decode(Order.self, from: data) {
