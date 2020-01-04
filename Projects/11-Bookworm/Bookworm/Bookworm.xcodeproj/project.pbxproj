@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B238948023C0D6F5006432DB /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238947F23C0D6F5006432DB /* BookView.swift */; };
 		B2F38F5823BEE93100B5190D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F38F5723BEE93100B5190D /* AppDelegate.swift */; };
 		B2F38F5A23BEE93100B5190D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F38F5923BEE93100B5190D /* SceneDelegate.swift */; };
 		B2F38F5D23BEE93100B5190D /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2F38F5B23BEE93100B5190D /* Bookworm.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B238947F23C0D6F5006432DB /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		B2F38F5423BEE93100B5190D /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F38F5723BEE93100B5190D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F38F5923BEE93100B5190D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B2F38F5723BEE93100B5190D /* AppDelegate.swift */,
 				B2F38F5923BEE93100B5190D /* SceneDelegate.swift */,
 				B2F38F5E23BEE93100B5190D /* ContentView.swift */,
+				B238947F23C0D6F5006432DB /* BookView.swift */,
 				B2F38F6023BEE93200B5190D /* Assets.xcassets */,
 				B2F38F6523BEE93200B5190D /* LaunchScreen.storyboard */,
 				B2F38F6823BEE93200B5190D /* Info.plist */,
@@ -153,6 +156,7 @@
 				B2F38F5D23BEE93100B5190D /* Bookworm.xcdatamodeld in Sources */,
 				B2F38F5F23BEE93100B5190D /* ContentView.swift in Sources */,
 				B2F38F5A23BEE93100B5190D /* SceneDelegate.swift in Sources */,
+				B238948023C0D6F5006432DB /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
