@@ -43,4 +43,25 @@ Setting up Core Data requires two steps: creating what's called a persistent con
 
 ![icon](images/xcdatamodeld.png)
 
-```moc``` is a property where a *managed object context* is stored. **Student** inherits from **NSManagedObject** which is a class and these objects are called *managed* because Core Data is looking after them: it loads them from the persistent container and writes their changed back too. All of out objects live inside a *managed object context* which is responsible for fetching managed objects, as well as saving changes and more. 
+```moc``` is a property where a *managed object context* is stored. **Student** inherits from **NSManagedObject** which is a class and these objects are called *managed* because Core Data is looking after them: it loads them from the persistent container and writes their changed back too. All of out objects live inside a *managed object context* which is responsible for fetching managed objects, as well as saving changes and more.
+
+---
+
+## Creating books with Core Data
+
+![Alt Text](images/AddBookView-Simulator)
+
+## Adding a custom star rating component
+
+![icon](images/RatingView.png)
+
+![Alt Text](images/RatingView-Simulator.gif)
+
+## Building a list with @FetchRequest
+
+![icon](images/UpdatedContentView.png)
+
+![icon](images/EmojiRatingView.png)
+
+![icon](images/EmojiRatingView-Simulator.png)
+
