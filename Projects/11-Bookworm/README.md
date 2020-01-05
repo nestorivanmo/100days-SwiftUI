@@ -73,3 +73,51 @@ Setting up Core Data requires two steps: creating what's called a persistent con
 
 ![Alt Text](images/DetailView-Simulator.gif)
 
+## Sorting fetch requests with NSSortDescriptor
+
+Fetch request sorting is performed using a new class called **NSSortDescriptor** and we can create the **attribute** we want to sort on, and whether it should be **ascending** or not. 
+
+```swift
+@FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Book.title, ascending: true), NSSortDescriptor(keyPath: \Book.author, ascending: true)]) var books: FetchedResults<Book>
+```
+
+![icon](images/NSSortDescriptor-simulator.png)
+
+## Deleting from a CoreData fetch request
+
+```swift
+func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            let book = books[offset]
+            moc.delete(book)
+        }
+        try? moc.save()
+    }
+```
+
+```swift
+.onDelete(perform: deleteBooks)
+```
+
+![Alt Text](images/DeleteFromCoreData-Simulator.gif)
+
+## Using an alert to pop a NavigationLink programatically
+
+Adding this code to **GeometryReader** as modifiers:
+
+```swift
+.alert(isPresented: $showingDeleteAlert) {
+            Alert(title: Text("Delete book"), message: Text("Are you sure?"), primaryButton: .destructive(Text("Delete")) {
+                    self.deleteBook()
+                }, secondaryButton: .cancel()
+            )
+        }
+        .navigationBarItems(trailing: Button(action: {
+            self.showingDeleteAlert = true
+        }){
+            Image(systemName: "trash")
+        })
+```
+
+![Alt Text](images/DeleteBooks-Simulator.gif)
+
