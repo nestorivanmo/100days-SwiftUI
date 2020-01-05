@@ -63,5 +63,13 @@ Setting up Core Data requires two steps: creating what's called a persistent con
 
 ![icon](images/EmojiRatingView.png)
 
-![icon](images/EmojiRatingView-Simulator.png)
+![](images/EmojiRatingView-Simulator.png)
+
+---
+
+## Showing book details
+
+![icon](images/DetailView.png)
+
+![Alt Text](images/DetailView-Simulator.gif)
 
