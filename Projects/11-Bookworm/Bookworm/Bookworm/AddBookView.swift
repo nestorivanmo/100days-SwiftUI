@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct BookView: View {
+struct AddBookView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var presentationMode
     
@@ -56,6 +56,6 @@ struct BookView: View {
 
 struct BookView_Previews: PreviewProvider {
     static var previews: some View {
-        BookView()
+        AddBookView()
     }
 }
