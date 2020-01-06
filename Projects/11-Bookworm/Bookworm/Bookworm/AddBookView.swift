@@ -18,6 +18,9 @@ struct AddBookView: View {
     @State private var genre = ""
     @State private var review = ""
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
+    private var disabledSaveButton: Bool {
+        title.count < 2 || author.count < 2 || genre.isEmpty
+    }
 
     var body: some View {
         NavigationView {
@@ -47,6 +50,7 @@ struct AddBookView: View {
                         try? self.moc.save()
                         self.presentationMode.wrappedValue.dismiss()
                     }
+                    .disabled(disabledSaveButton)
                 }
             }
             .navigationBarTitle("Add Book")
