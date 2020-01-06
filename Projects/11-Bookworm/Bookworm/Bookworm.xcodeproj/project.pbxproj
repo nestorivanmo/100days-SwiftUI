@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B238948023C0D6F5006432DB /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238947F23C0D6F5006432DB /* BookView.swift */; };
+		B238948023C0D6F5006432DB /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238947F23C0D6F5006432DB /* AddBookView.swift */; };
 		B238948223C0DF53006432DB /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238948123C0DF53006432DB /* RatingView.swift */; };
 		B238948423C16FC1006432DB /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238948323C16FC1006432DB /* EmojiRatingView.swift */; };
 		B238948623C175D4006432DB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238948523C175D4006432DB /* DetailView.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B238947F23C0D6F5006432DB /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		B238947F23C0D6F5006432DB /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		B238948123C0DF53006432DB /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		B238948323C16FC1006432DB /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		B238948523C175D4006432DB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 				B2F38F5723BEE93100B5190D /* AppDelegate.swift */,
 				B2F38F5923BEE93100B5190D /* SceneDelegate.swift */,
 				B2F38F5E23BEE93100B5190D /* ContentView.swift */,
-				B238947F23C0D6F5006432DB /* BookView.swift */,
+				B238947F23C0D6F5006432DB /* AddBookView.swift */,
 				B238948123C0DF53006432DB /* RatingView.swift */,
 				B238948323C16FC1006432DB /* EmojiRatingView.swift */,
 				B238948523C175D4006432DB /* DetailView.swift */,
@@ -168,7 +168,7 @@
 				B2F38F5F23BEE93100B5190D /* ContentView.swift in Sources */,
 				B238948223C0DF53006432DB /* RatingView.swift in Sources */,
 				B2F38F5A23BEE93100B5190D /* SceneDelegate.swift in Sources */,
-				B238948023C0D6F5006432DB /* BookView.swift in Sources */,
+				B238948023C0D6F5006432DB /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
