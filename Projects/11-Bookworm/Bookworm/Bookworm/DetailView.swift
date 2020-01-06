@@ -37,6 +37,8 @@ struct DetailView: View {
                     .padding()
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
+                Text(self.showDate(from: self.book.date))
+                    .font(.title)
                 Spacer()
             }
         }
@@ -57,6 +59,13 @@ struct DetailView: View {
     func deleteBook() {
         moc.delete(book)
         presentationMode.wrappedValue.dismiss()
+    }
+    
+    func showDate(from date: Date?) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d MMM y"
+        guard let date = date else {return ""}
+        return formatter.string(from: date)
     }
 }
 
