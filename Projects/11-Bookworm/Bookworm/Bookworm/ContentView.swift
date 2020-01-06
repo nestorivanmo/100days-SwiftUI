@@ -23,6 +23,7 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(book.title ?? "Unknown Title")
                                 .font(.headline)
+                                .foregroundColor(book.rating == 1 ? Color.red:Color.black)
                             Text(book.author ?? "Unknown Author")
                                 .foregroundColor(.secondary)
                         }
@@ -37,7 +38,7 @@ struct ContentView: View {
                 Image(systemName: "plus")
             }))
             .sheet(isPresented: $showingAddScreen) {
-                BookView().environment(\.managedObjectContext, self.moc)
+                AddBookView().environment(\.managedObjectContext, self.moc)
             }
         }
     }
