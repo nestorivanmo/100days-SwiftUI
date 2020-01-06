@@ -6,6 +6,10 @@ Canadian software developer Rob Pike once said
 
 Objective: **CoreData** -> Apple's framework for working with databases. 
 
+![Alt Text](images/Bookworm1-Simulator.gif)
+
+![Alt Text](images/Bookworm2-Simulator.gif)
+
 ## Creating a custom component with @Binding
 
 **@State**: lets us work with local value types.
