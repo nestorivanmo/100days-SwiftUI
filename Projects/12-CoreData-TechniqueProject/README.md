@@ -88,5 +88,7 @@ Now, adding more flexibility. We can improve our **FilteredList** to work with a
 
 ![Alt Text](images/CoreDataProject-FilteredList-Simulator.gif)
 
+## One-to-many relationships with Core Data, SwiftUI, and  @FetchRequest
+
 
 
