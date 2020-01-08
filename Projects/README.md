@@ -11,4 +11,4 @@
 9. [Drawing: Second technique project](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/9-Drawing-TechniqueProject)
 10. [Cupcake Corner](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/10-Cupcake)
 11. [Bookworm](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/11-Bookworm)
-
+12. [Core Data: Third technique project](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/12-CoreData-TechniqueProject)

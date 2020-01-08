@@ -96,6 +96,7 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 54. [4-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/11-Bookworm): Project 11, part two
 55. [5-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/11-Bookworm): Project 11, part three
 56. [6-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/11-Bookworm): Project 11, part four
+57. [7-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/12-CoreData-TechniqueProject): Project 12, part one
 
 ---
 
