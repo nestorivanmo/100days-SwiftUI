@@ -5,6 +5,7 @@
 //  Created by Néstor I. Martínez Ostoa on 07/01/20.
 //  Copyright © 2020 Néstor I. Martínez Ostoa. All rights reserved.
 //
+import CoreData
 import UIKit
 import SwiftUI
 
@@ -20,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Get the managed object context from the shared persistent container.
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        context.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
 
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.

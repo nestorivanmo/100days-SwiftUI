@@ -20,6 +20,21 @@ extension Country {
     @NSManaged public var fullName: String?
     @NSManaged public var shortName: String?
     @NSManaged public var candy: NSSet?
+    
+    public var wrappedFullName: String {
+        fullName ?? "Unknown Country"
+    }
+    
+    public var wrappedShortName: String {
+        shortName ?? "Unknown Country"
+    }
+    
+    public var candyArray: [Candy] {
+        let set = candy as? Set<Candy> ?? []
+        return set.sorted {
+            $0.wrappedName < $1.wrappedName
+        }
+    }
 
 }
 
