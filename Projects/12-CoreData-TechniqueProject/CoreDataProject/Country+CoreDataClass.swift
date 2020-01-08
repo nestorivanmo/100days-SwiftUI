@@ -1,5 +1,5 @@
 //
-//  Singer+CoreDataClass.swift
+//  Country+CoreDataClass.swift
 //  CoreDataProject
 //
 //  Created by Néstor I. Martínez Ostoa on 08/01/20.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Singer)
-public class Singer: NSManagedObject {
+@objc(Country)
+public class Country: NSManagedObject {
 
 }
