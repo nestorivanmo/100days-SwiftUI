@@ -1,3 +1,5 @@
+
+
 # Core Data: third technique project
 
 Jim Rohn once said...
@@ -90,5 +92,72 @@ Now, adding more flexibility. We can improve our **FilteredList** to work with a
 
 ## One-to-many relationships with Core Data, SwiftUI, and  @FetchRequest
 
+Core Data allows us to link entities together using relationships, and when we use `@FetchRequest`Core Data sends all that data back to us for use
+
+Relationships come in four forms: 
+
+- **A one to one relationship** means that one object in an entity links to exactly one object in another entity. In our example, this would mean that each type of candy has one country of origin, and each country could make only one type of candy.
+- **A one to many relationship** means that one object in an entity links to many objects in another entity. In our example, this would mean that one type of candy could have been introduced simultaneously in many countries, but that each country still could only make one type of candy.
+- **A many to one relationship** means that many objects in an entity link to one object in another entity. In our example, this would mean that each type of candy has one country of origin, and that each country can make many types of candy.
+- **A many to many relationship** means that many objects in an entity link to many objects in another entity. In our example, this would mean that one type of candy had been introduced simultaneously in many countries, and each country can make many types of candy.
+
+![icon](images/CandyEntity.png)
+
+![icon](images/CountryEntity.png)
+
+![icon](images/CandyExtension.png)
+
+![icon](images/CountryExtension.png)
+
+```swift
+struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(entity: Country.entity(), sortDescriptors: []) var countries: FetchedResults<Country>
+    
+    var body: some View {
+        VStack {
+            List {
+                ForEach(countries, id: \.self) { country in
+                    Section(header: Text(country.wrappedFullName)) {
+                        ForEach(country.candyArray, id: \.self) { candy in
+                            Text(candy.wrappedName)
+                        }
+                    }
+                }
+            }
+
+            Button("Add") {
+                let candy1 = Candy(context: self.moc)
+                candy1.name = "Mars"
+                candy1.origin = Country(context: self.moc)
+                candy1.origin?.shortName = "UK"
+                candy1.origin?.fullName = "United Kingdom"
+
+                let candy2 = Candy(context: self.moc)
+                candy2.name = "KitKat"
+                candy2.origin = Country(context: self.moc)
+                candy2.origin?.shortName = "UK"
+                candy2.origin?.fullName = "United Kingdom"
+
+                let candy3 = Candy(context: self.moc)
+                candy3.name = "Twix"
+                candy3.origin = Country(context: self.moc)
+                candy3.origin?.shortName = "UK"
+                candy3.origin?.fullName = "United Kingdom"
+
+                let candy4 = Candy(context: self.moc)
+                candy4.name = "Toblerone"
+                candy4.origin = Country(context: self.moc)
+                candy4.origin?.shortName = "CH"
+                candy4.origin?.fullName = "Switzerland"
+
+                try? self.moc.save()
+            }
+        }
+    }
+}
+```
 
 
+
+![Alt Text](images/CandyCountry-Simulator.gif)
