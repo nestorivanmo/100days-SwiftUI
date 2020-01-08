@@ -55,3 +55,38 @@ That asks Core Data to merge duplicate objects based on their properties – it 
 
 ![Alt Text](images/Wizard-Simulator.gif)
 
+---
+
+## Filtering @FetchRequest using NSPredicate
+
+![icon](images/NSPredicate.png)
+
+Other predicates: 
+
+```swift
+    NSPredicate(format: "universe == %@", "Star Wars"))
+    NSPredicate(format: "name < %@", "F"))
+    NSPredicate(format: "universe IN %@", ["Aliens", "Firefly", "Star Trek"])
+    NSPredicate(format: "name BEGINSWITH %@", "E"))
+    NSPredicate(format: "name BEGINSWITH[c] %@", "e"))
+    NSPredicate(format: "NOT name BEGINSWITH[c] %@", "e"))
+```
+
+## Dynamically filtering @FetchRequest with SwiftUI
+
+ ![icon](images/DynamicFiltering-CV.png)
+
+![icon](images/FilteredList.png)
+
+![icon](images/Singer-Extension.png)
+
+Now, adding more flexibility. We can improve our **FilteredList** to work with any kind of entity. 
+
+![icon](images/ContentView-Generics.png)
+
+![icon](images/FilteredList-Generics.png)
+
+![Alt Text](images/CoreDataProject-FilteredList-Simulator.gif)
+
+
+
