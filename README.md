@@ -100,6 +100,10 @@ Following Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/1
 58. [8-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/12-CoreData-TechniqueProject): Project 12, part two
 59. [9-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Projects/12-CoreData-TechniqueProject): Project 12, part three
 
+## Days 60-61: Consolidation V
+
+60. [9-Ene-2020](https://github.com/nestorivanmo/100days-SwiftUI/tree/master/Challenges/5-Friendface): Milestone: Projects 10-12
+
 ---
 
 ## Projects
